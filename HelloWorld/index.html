@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Hello,world
+  </title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+<div class="box"><p>Hello,World!</p></div>
+<script>
+  (function () {
+    let box = document.querySelector('.box');
+    let evalBox = document.querySelector('.eval');
+
+    box.addEventListener('mouseover', () => {
+        evalBox = document.createElement('div');
+        evalBox.className = 'eval';
+        box.appendChild(evalBox);
+
+        let text = document.createElement('p');
+        evalBox.appendChild(text);
+        text.innerText = 'Don`t touch me!';
+      })
+    box.addEventListener('mouseout',() => {
+      evalBox.remove();
+    })
+  })()
+</script>
+</body>
+
+</html>

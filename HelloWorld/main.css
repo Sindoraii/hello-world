@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    border: black 1px solid;
+    max-width: 160px;
+    text-align: center;
+    padding: 1em;
+    margin: 1em auto;
+}
+.eval {
+
+    display: flex;
+    border: black 1px solid;
+    max-width: 100px;
+    justify-content: center;
+    padding: 1em;
+    margin: 1em auto;
+}
